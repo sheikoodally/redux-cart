@@ -1,15 +1,22 @@
 import React from 'react';
 import './App.css';
 
-import {cartItems} from './cart-items'
+//Components
+import Navbar from './components/Navbar.js';
+import CartContainer from './components/CartContainer.js';
+
+//Items
+import cartItems from './cart-items';
 
 function App() {
+
+  console.log(cartItems);
   return (
 
-    console.log(cartItems);
     <div className="App">
       <header className="App-header">
-        
+        <Navbar/>
+        <CartContainer items = {cartItems}/>
       </header>
     </div>
   );
