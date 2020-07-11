@@ -2,7 +2,7 @@ import React from 'react'
 
 const CartContainer = ({items =[]}) => {
 
-    if(items == ''){
+    if(items === ''){
         return (
             <div>
                 Loading...
