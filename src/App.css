@@ -1,0 +1,12 @@
+.amount-btn{
+    width: 1.75rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.amount-btn svg {
+    padding-top: 0.25rem;
+    fill: red;
+    align-content: left;
+}
