@@ -1,17 +1,20 @@
-import React from 'react'
+import React from 'react';
+import CartItems from './CartItems';
 
 const CartContainer = ({items =[]}) => {
 
-    if(items === ''){
+    if(items.length === 0){
         return (
             <div>
-                Loading...
+                Your Bag Is Currently Empty
             </div>
         )  
-    } else
+    } 
     return (
         <div>
-            Loaded
+            {items.map((item) =>{
+                return <CartItems key={item.id} item={item}/>
+            })}
         </div>
     )
 };
