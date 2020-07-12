@@ -13,13 +13,15 @@ function App() {
 
   console.log(cartItems);
   return (
-
+    <div className="mainDiv">
+      <Navigation/>
     <Container className="App">
       <header className="App-header">
-        <Navigation/>
+        
         <CartContainer items = {cartItems}/>
       </header>
     </Container>
+    </div>
   );
 }
 

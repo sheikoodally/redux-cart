@@ -2,6 +2,13 @@ body{
     height: 100%;
 }
 
+.mainDiv{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    
+}
+
 .separation{
     height: 1px;
     background-color: black;
@@ -91,6 +98,43 @@ body{
     padding-top: 1rem;
 }
 
+.NavBg{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.nav-container {
+    display: block;
+    position: relative;
+    padding-right: 3rem;
+}
+
+.navSvg {
+    width: 2rem;
+    fill: #fff;
+}
+
+.amount-container {
+    position: absolute;
+    top: -0.75rem;
+    right: -0.75rem;
+    width: 1.75rem;
+    height: 1.75rem;
+    border-radius: 50%;
+    background: hsl(205, 84%, 74%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 3rem;
+}
+  .total-amount {
+    color: #fff;
+    margin-bottom: 0;
+    font-size: 1.25rem;
+}
+
+
 @media only screen and (max-width: 450px) {
     .descr {
       height: 15rem;
@@ -98,4 +142,4 @@ body{
     .adding{
         height:15rem
     }
-  }
+}
