@@ -3,7 +3,7 @@ import './App.css';
 import Container from 'react-bootstrap/Container';
 
 //Components
-import Navbar from './components/Navbar.js';
+import Navigation from './components/Navigation.js';
 import CartContainer from './components/CartContainer.js';
 
 //Items
@@ -16,7 +16,7 @@ function App() {
 
     <Container className="App">
       <header className="App-header">
-        <Navbar/>
+        <Navigation/>
         <CartContainer items = {cartItems}/>
       </header>
     </Container>

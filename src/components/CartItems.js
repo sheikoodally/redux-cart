@@ -8,28 +8,22 @@ const CartItems = ({item:{title, img, amount, price}}) => {
     return (
         <div>
         <Row>
-            <Col xs={12} md={5}>
-                <Card className= "cardBg" style={{ width: '25rem' }}>
+            <Col className= "cardBg" xs={12} md={5}>
+                <Card className= "cardBg" >
                     <Card.Img className= "test" variant="top" src={img}/>
-                    <Card.Body>
-                        <Card.Title>{title}</Card.Title>
-                        <Card.Text>
-                        ${price}
-                        </Card.Text>
-                        <Button className="removeBtn">Remove</Button>
-                    </Card.Body>
                 </Card>
             </Col>
 
-            <Col xs={8} md={4}>
+            <Col xs={7} md={3} className="descr">
             <div className="justifyCenter">
-                <h3>{title}</h3>
-                <h3>${price}</h3>
+                <h5 className="spaceFont">{title}</h5>
+                <h6 className="spaceFont">${price}</h6>
                 <button className="removeBtn"> Remove </button>
             </div>
             </Col>
 
-            <Col xs={4} md={3}>
+            <Col xs={4} md={3} className="adding">
+                <div className="addingDiv">
                 {/* increase amount */}
                 <button className="amount-btn">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
@@ -38,7 +32,7 @@ const CartItems = ({item:{title, img, amount, price}}) => {
                 </button>
 
                 {/* amount */}
-                <p className="amount"> {amount}</p>
+                <p className="amount" > {amount}</p>
 
                 {/* decrease amount */}
                 <button className="amount-btn">
@@ -46,7 +40,12 @@ const CartItems = ({item:{title, img, amount, price}}) => {
                         <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
                     </svg>
                 </button>
+                </div>
             </Col>
+            
+            <Col xs={12} md={12}>
+                <div className="separation"></div>
+            </Col>  
 
         </Row>
         </div>

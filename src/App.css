@@ -1,13 +1,29 @@
+body{
+    height: 100%;
+}
+
+.separation{
+    height: 1px;
+    background-color: black;
+    margin: 2rem 0 0 0;
+}
+
 .amount-btn{
     height: 2rem;
     width: 1.75rem;
     background: transparent;
-    border: none;
+    border:1px solid;
     cursor: pointer;
+    border-color: red;
+
 }
 
 .amount-btn svg {
     fill: red;
+}
+
+.amount{
+    padding: 0.75rem 0 0 0.5rem;
 }
 
 .textCenter{
@@ -16,13 +32,14 @@
 }
 
 .cardBg{
-    background-color: aqua;
     align-content: center;
     text-align: center;
     padding: 1rem 0;
+    height: 28rem;
+    width: '25rem'
+    
 }
 
-.test{background-color: red;}
 
 .removeBtn{
     width: 5rem;
@@ -34,12 +51,51 @@
 }
 
 .justifyCenter{
-    background-color: khaki;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: left;
-    height: 20rem;
-    margin-left: auto;
-    margin-right: auto;
+    vertical-align: middle;
+    height: 100%;
+    justify-content: center;
+    padding-top: 1rem;
 }
+
+.descr{
+    align-content: center;
+    text-align: left;
+    align-content: center;
+    height: 25rem;
+    width: 100%;
+}
+
+
+.spaceFont{
+    padding-bottom: 1rem;
+}
+
+.adding{
+    align-content: center;
+    text-align: left;
+    align-content: left;
+    height: 25rem;
+    width: 100%;
+}
+
+.addingDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    vertical-align: middle;
+    height: 100%;
+    justify-content: center;
+    padding-top: 1rem;
+}
+
+@media only screen and (max-width: 450px) {
+    .descr {
+      height: 15rem;
+    }
+    .adding{
+        height:15rem
+    }
+  }
