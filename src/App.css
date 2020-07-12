@@ -8,5 +8,25 @@
 .amount-btn svg {
     padding-top: 0.25rem;
     fill: red;
-    align-content: left;
+}
+
+.textCenter{
+    text-align: center;
+}
+
+.cardBg{
+    background-color: aqua;
+    align-content: center;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.test{background-color: red;}
+
+.removeBtn{
+    padding: 0.5rem;
+    background-color: rgb(248, 108, 108);
+    font-size: 1rem;
+    border-radius: 15%;
+    border-width: 1px;
 }

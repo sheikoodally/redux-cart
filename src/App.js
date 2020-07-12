@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import Container from 'react-bootstrap/Container';
 
 //Components
 import Navbar from './components/Navbar.js';
@@ -13,12 +14,12 @@ function App() {
   console.log(cartItems);
   return (
 
-    <div className="App">
+    <Container className="App">
       <header className="App-header">
         <Navbar/>
         <CartContainer items = {cartItems}/>
       </header>
-    </div>
+    </Container>
   );
 }
 
