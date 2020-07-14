@@ -10,35 +10,42 @@ import CartContainer from './components/CartContainer.js';
 import cartItems from './cart-items';
 
 //IMPORT ACTIONS
-import {DECREASE, INCREASE, RESET, CHANGE_NAME} from './components/Action'
+import {} from './components/Action';
+
 
 import {createStore} from 'redux';
+import Reducer from './components/Reducer';
+
+//react-redux -provider -wrap app, connect -used in component
+
+import {Provider} from 'react-redux';
+
+
 //initial store
 const initialStore = {
-  count: 5,
-  name: "john"
+  cart: cartItems,
+  total: 0, 
+  amount: 4
 };
 
 
 
-const store = createStore(reducer, initialStore);
-store.dispatch({type: DECREASE});
-store.dispatch({type: INCREASE});
-store.dispatch({type: CHANGE_NAME});
-store.dispatch({type: DECREASE});
+const store = createStore(Reducer, initialStore);
+
 
 function App() {
-
-  console.log(cartItems);
+  
   return (
-    <div className="mainDiv">
-      <Navigation cart = {store.getState()}/>
-      <Container className="App">
-        <header className="App-header">  
-          <CartContainer items = {cartItems}/>
-        </header>
-      </Container>
-    </div>
+    <Provider store = {store}>
+      <div className="mainDiv">
+        <Navigation />
+        <Container className="App">
+          <header className="App-header">  
+            <CartContainer items = {cartItems}/>
+          </header>
+        </Container>
+      </div>
+    </Provider>
   );
 }
 
