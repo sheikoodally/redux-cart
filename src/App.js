@@ -24,7 +24,7 @@ import {Provider} from 'react-redux';
 //initial store
 const initialStore = {
   cart: cartItems,
-  total: 0, 
+  total: 10, 
   amount: 4
 };
 
@@ -41,7 +41,7 @@ function App() {
         <Navigation />
         <Container className="App">
           <header className="App-header">  
-            <CartContainer items = {cartItems}/>
+            <CartContainer />
           </header>
         </Container>
       </div>
