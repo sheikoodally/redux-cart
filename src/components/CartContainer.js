@@ -15,6 +15,16 @@ const CartContainer = ({items =[]}) => {
             {items.map((item) =>{
                 return <CartItems key={item.id} item={item}/>
             })}
+
+            <footer>
+                <hr />
+                <div className="cart-total">
+                <h4 className="h4Footer">
+                    total <span>$0.00</span>
+                </h4>
+                </div>
+                <button className="btn clear-btn">clear cart</button>
+            </footer>
         </div>
     )
 };
