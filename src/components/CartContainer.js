@@ -7,7 +7,7 @@ const CartContainer = ({items =[], total}) => {
     if(items.length === 0){
         return (
             <div>
-                Your Bag Is Currently Empty
+                Your Bag Is Currently Empty.
             </div>
         )  
     } 
