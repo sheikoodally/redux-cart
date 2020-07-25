@@ -1,6 +1,7 @@
 import React from 'react';
 import CartItems from './CartItems';
 import {connect} from 'react-redux';
+import {CLEAR_CART} from '../components/Action'
 
 const CartContainer = ({items =[], total}) => {
 
@@ -31,7 +32,9 @@ const CartContainer = ({items =[], total}) => {
 };
 
 const mapStateToProps = (store) => {
-    return {items : store.cart, total:store.total}
-};
+    return {items: store.cart, total: store.total}
+} 
+
+
 
 export default connect(mapStateToProps)(CartContainer);
