@@ -3,7 +3,7 @@ import CartItems from './CartItems';
 import {connect} from 'react-redux';
 import {CLEAR_CART} from '../components/Action'
 
-const CartContainer = ({items =[], total}) => {
+const CartContainer = ({items =[], total, dispatch}) => {
 
     if(items.length === 0){
         return (
@@ -25,7 +25,7 @@ const CartContainer = ({items =[], total}) => {
                 Total <span>{total}</span>
                 </h4>
                 </div>
-                <button className="btn clear-btn">clear cart</button>
+                <button className="btn clear-btn" onClick={()=>dispatch({type:CLEAR_CART})}>clear cart</button>
             </footer>
         </div>
     )

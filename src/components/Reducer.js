@@ -1,4 +1,4 @@
-import {DECREASE, INCREASE, RESET, CHANGE_NAME} from './Action';
+import {DECREASE, INCREASE, RESET, CLEAR_CART} from './Action';
 //state - old state/ before update
 //action - what happened/ what update?
 //reducer - used to update store
@@ -8,6 +8,10 @@ function reducer(state, action){
       return {...state, count: state.count - 1}
     } */
 
+    if(action.type === CLEAR_CART){
+      return {...state, cart:[]}
+    }
+    
     return state;
 }
 
