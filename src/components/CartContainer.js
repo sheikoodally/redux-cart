@@ -1,7 +1,7 @@
 import React from 'react';
 import CartItems from './CartItems';
 import {connect} from 'react-redux';
-import {CLEAR_CART} from '../components/Action'
+import {CLEAR_CART} from '../components/Action';
 
 const CartContainer = ({items =[], total, dispatch}) => {
 

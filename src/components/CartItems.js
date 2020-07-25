@@ -3,8 +3,10 @@ import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import {INCREASE, DECREASE, REMOVE} from '../components/Action';
+import {connect} from 'react-redux';
 
-const CartItems = ({item:{title, img, amount, price}}) => {
+const CartItems = ({item:{title, img, amount, price}, remove}) => {
     return (
         <div>
         <Row>
@@ -18,7 +20,7 @@ const CartItems = ({item:{title, img, amount, price}}) => {
             <div className="justifyCenter">
                 <h5 className="spaceFont">{title}</h5>
                 <h6 className="spaceFont">${price}</h6>
-                <button className="removeBtn"> Remove </button>
+                <button className="removeBtn" onClick={ () => remove()}> Remove </button>
             </div>
             </Col>
 
@@ -51,5 +53,14 @@ const CartItems = ({item:{title, img, amount, price}}) => {
         </div>
     )
 }
+//not mapping values to props
+const mapDispatchToProps = (dispatch, ownProps) =>{
 
-export default CartItems;
+    const {id} = ownProps.item;
+
+    console.log(ownProps);
+    //function - will run when users click on remove button
+    return{ remove: () => dispatch({type:REMOVE, payload: {id: id}})};
+};
+
+export default connect(null, mapDispatchToProps)(CartItems);
