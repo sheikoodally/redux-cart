@@ -26,7 +26,7 @@ function reducer(state, action){
     }
 
     if(action.type === DECREASE){
-      let tempCart = [action.payload];
+      let tempCart = [];
 
       if(action.payload.amount === 1){
         tempCart = state.cart.filter((singleItem) => (singleItem.id !== action.payload.id));
