@@ -12,7 +12,7 @@ body{
 .separation{
     height: 1px;
     background-color: black;
-    margin: 2rem 0 0 0;
+    margin: 1rem 0 0 0;
 }
 
 .amount-btn{
@@ -42,9 +42,13 @@ body{
     align-content: center;
     text-align: center;
     padding: 1rem 0;
-    height: 28rem;
-    width: '25rem'
+    height: 20rem;
+    width: 20rem;
     
+}
+
+.cardImg{
+    height: 100%;
 }
 
 
@@ -71,7 +75,7 @@ body{
     align-content: center;
     text-align: left;
     align-content: center;
-    height: 25rem;
+    height: 20rem;
     width: 100%;
 }
 
@@ -155,7 +159,7 @@ footer {
     margin-top: 1rem;
   }
   .clear-btn {
-    background: transparent;
+    background-color: hsl(360, 71%, 66%);
     padding: 0.5rem 1rem;
     color: hsl(360, 67%, 44%);
     border: 1px solid hsl(360, 67%, 44%);
@@ -163,7 +167,7 @@ footer {
   }
   .clear-btn:hover {
     background: hsl(360, 71%, 66%);
-    color: hsl(360, 67%, 44%);
+    color: rgb(8, 8, 8);
     border-color: hsl(360, 71%, 66%);
   }
 

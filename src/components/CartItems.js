@@ -11,7 +11,7 @@ const CartItems = ({item:{title, img, amount, price}, remove, increase, decrease
         <Row>
             <Col className= "cardBg" xs={12} md={5}>
                 <Card className= "cardBg" >
-                    <Card.Img className= "test" variant="top" src={img}/>
+                    <Card.Img className= "cardImg" variant="top" src={img}/>
                 </Card>
             </Col>
 
