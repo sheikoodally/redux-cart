@@ -162,7 +162,7 @@ footer {
     margin-top: 1rem;
   }
   .clear-btn {
-    background-color: hsl(360, 71%, 66%);
+    background-color: transparent;
     padding: 0.5rem 1rem;
     color: hsl(360, 67%, 44%);
     border: 1px solid hsl(360, 67%, 44%);
