@@ -11,8 +11,9 @@ const CartContainer = ({items =[], total, dispatch}) => {
 
     if(items.length === 0){
         return (
-            <div>
-                Your Bag Is Currently Empty
+            <div className="center">
+                <h1>Your Cart</h1>
+                <h3>Is Currently Empty</h3>
             </div>
         )  
     } 

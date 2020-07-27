@@ -166,3 +166,7 @@ footer {
     color: hsl(360, 67%, 44%);
     border-color: hsl(360, 71%, 66%);
   }
+
+  .center{
+      text-align: center;
+  }
