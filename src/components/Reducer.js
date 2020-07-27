@@ -1,4 +1,4 @@
-import {DECREASE, INCREASE, RESET, CLEAR_CART, REMOVE, GET_TOTAL} from './Action';
+import {DECREASE, INCREASE, CLEAR_CART, REMOVE, GET_TOTAL} from './Action';
 //state - old state/ before update
 //action - what happened/ what update?
 //reducer - used to update store
