@@ -44,7 +44,7 @@ const CartItems = ({item:{title, img, amount, price}, remove, increase, decrease
                 </div>
             </Col>
             
-            <Col xs={12} md={12}>
+            <Col xs={12} md={12} className="seperationDiv">
                 <div className="separation"></div>
             </Col>  
 

@@ -12,7 +12,10 @@ body{
 .separation{
     height: 1px;
     background-color: black;
-    margin: 1rem 0 0 0;
+}
+
+.seperationDiv{
+    padding: 2rem 0 0 0 ;
 }
 
 .amount-btn{
@@ -88,7 +91,7 @@ body{
     align-content: center;
     text-align: left;
     align-content: left;
-    height: 25rem;
+    height: 20rem;
     width: 100%;
 }
 
